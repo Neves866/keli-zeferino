@@ -1,0 +1,73 @@
+.footer {
+  background: var(--ink-primary);
+  color: var(--bg-warm);
+  padding-block: clamp(3.5rem, 6vw, 5rem) calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.name {
+  font-family: var(--font-fraunces);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--bg-warm);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.whatsapp {
+  color: var(--accent-nude);
+  transition: color 0.3s var(--ease-soft);
+  width: fit-content;
+}
+
+.whatsapp:hover {
+  color: var(--accent-gold);
+}
+
+.rights {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  border-top: 1px solid rgba(226, 216, 199, 0.15);
+  padding-top: 2rem;
+  margin: 0;
+}
+
+/* ============================================
+   Desktop
+   ============================================ */
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+  }
+
+  .rights {
+    flex-basis: 100%;
+  }
+}

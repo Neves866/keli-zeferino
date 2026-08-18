@@ -1,0 +1,68 @@
+.section {
+  background: var(--bg-warm);
+  padding-top: clamp(6rem, 12vw, 10rem);
+  padding-bottom: clamp(6rem, 12vw, 10rem);
+}
+
+.inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ornament span {
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  opacity: 0.7;
+}
+
+.ornament span:nth-child(2) {
+  width: 5px;
+  height: 5px;
+  background: var(--accent-nude);
+}
+
+.quote {
+  font-family: var(--font-fraunces);
+  font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--ink-primary);
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+.complement {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--ink-secondary);
+  max-width: 52ch;
+  margin-inline: auto;
+}
+
+/* ============================================
+   Mobile pequeno
+   ============================================ */
+
+@media (max-width: 360px) {
+  .quote {
+    font-size: 1.7rem;
+  }
+
+  .complement {
+    font-size: 0.98rem;
+  }
+}

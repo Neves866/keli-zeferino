@@ -1,0 +1,124 @@
+.section {
+  background: var(--bg-cream);
+}
+
+.header {
+  max-width: 640px;
+  margin-bottom: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.title {
+  margin-top: 1.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding-block: 1.75rem;
+}
+
+.item + .item {
+  border-top: 1px solid var(--line-soft);
+}
+
+.itemHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin-bottom: 0.9rem;
+}
+
+.itemNumber {
+  font-family: var(--font-fraunces);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.itemLine {
+  flex: 1;
+  height: 1px;
+  background: var(--line-soft);
+  align-self: center;
+  min-width: 2rem;
+}
+
+.itemTitle {
+  font-family: var(--font-fraunces);
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.itemText {
+  max-width: 40ch;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--ink-secondary);
+  padding-left: 0;
+}
+
+.imageWrap {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(226, 216, 199, 0.5),
+    0 30px 60px -30px rgba(42, 37, 32, 0.16);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ============================================
+   Desktop — lista + foto
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(3.5rem, 7vw, 6rem);
+  }
+
+  .itemText {
+    padding-left: 2.5rem;
+  }
+
+  .imageWrap {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+/* ============================================
+   Mobile pequeno
+   ============================================ */
+
+@media (max-width: 360px) {
+  .itemTitle {
+    white-space: normal;
+    font-size: 1.2rem;
+  }
+
+  .itemNumber {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.section {
+  background: var(--bg-warm);
+  text-align: center;
+  padding-top: clamp(6rem, 12vw, 10rem);
+  padding-bottom: clamp(6rem, 12vw, 10rem);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.title {
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+.text {
+  max-width: 52ch;
+  margin-inline: auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.actions {
+  margin-top: 0.8rem;
+}

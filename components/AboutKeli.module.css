@@ -1,0 +1,108 @@
+.section {
+  background: var(--bg-cream);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.imageWrap {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(226, 216, 199, 0.5),
+    0 30px 60px -30px rgba(42, 37, 32, 0.16);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.content {
+  max-width: 560px;
+}
+
+.title {
+  margin: 1.4rem 0 1.5rem;
+}
+
+.text {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: var(--ink-secondary);
+}
+
+.signature {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.signatureName {
+  font-family: var(--font-fraunces);
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--ink-primary);
+}
+
+.signatureRole {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.personalDivider {
+  margin-top: clamp(4rem, 8vw, 6rem);
+}
+
+.personalFigure {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.personalImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow:
+    0 1px 0 rgba(226, 216, 199, 0.5),
+    0 30px 60px -30px rgba(42, 37, 32, 0.16);
+}
+
+.personalCaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  max-width: 52ch;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   Desktop
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: clamp(3.5rem, 7vw, 6rem);
+  }
+
+  .imageWrap {
+    max-width: none;
+    margin: 0;
+  }
+}
