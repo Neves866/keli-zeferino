@@ -46,6 +46,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "Keli Zeferino",
+    url: "https://kelizeferino.com.br",
+  },
+  twitter: {
+    card: "summary",
+    title: "Keli Zeferino | Nutricionista em Cacoal - RO",
+    description:
+      "Acompanhamento nutricional individualizado, humano e cuidadoso para mulheres em Cacoal - RO.",
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
   robots: {
     index: true,

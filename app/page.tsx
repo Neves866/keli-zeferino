@@ -9,9 +9,31 @@ import LocationContact from "@/components/LocationContact";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import Footer from "@/components/Footer";
 
+// Dados estruturados (Schema.org) — apenas informações presentes no site.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Keli Zeferino - Nutricionista",
+  description:
+    "Acompanhamento nutricional individualizado, humano e cuidadoso para mulheres em Cacoal - Rondônia. Escuta, respeito e acolhimento em cada etapa da sua jornada de saúde.",
+  url: "https://kelizeferino.com.br",
+  telephone: "+5569984928759",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. Antonio de Paula Nunes, 1685",
+    addressLocality: "Cacoal",
+    addressRegion: "RO",
+    addressCountry: "BR",
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main>
         <Hero />

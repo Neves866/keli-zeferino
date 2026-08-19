@@ -22,7 +22,14 @@ export default function LocationContact() {
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Endereço</span>
                 <p className={styles.infoValue}>
-                  {CONTENT.contact.addressName}
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Av.+Antonio+de+Paula+Nunes,+1685+-+Cacoal+-+RO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.infoLink}
+                  >
+                    {CONTENT.contact.addressName}
+                  </a>
                   <br />
                   {CONTENT.contact.addressCity}
                 </p>

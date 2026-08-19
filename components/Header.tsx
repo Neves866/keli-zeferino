@@ -23,6 +23,15 @@ export default function Header() {
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
   return (
     <header
       className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}
