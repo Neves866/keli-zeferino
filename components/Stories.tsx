@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CONTENT } from "@/lib/content";
 import SectionReveal from "./SectionReveal";
 import styles from "./Stories.module.css";
@@ -7,34 +6,11 @@ interface StoryItem {
   number: string;
   title: string;
   text: string;
-  image: string;
-  imageAlt: string;
 }
 
-function StoryItem({
-  item,
-  index,
-}: {
-  item: StoryItem;
-  index: number;
-}) {
-  const reversed = index % 2 === 1;
-
+function StoryItem({ item }: { item: StoryItem }) {
   return (
-    <article
-      className={`${styles.story} ${reversed ? styles.storyReversed : ""}`}
-    >
-      <SectionReveal className={styles.storyImageWrap} variant="fade">
-        <Image
-          src={item.image}
-          alt={item.imageAlt}
-          width={1200}
-          height={1600}
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          className={styles.storyImage}
-        />
-      </SectionReveal>
-
+    <article className={styles.story}>
       <div className={styles.storyContent}>
         <SectionReveal delay={120}>
           <div className="editorial-line">
@@ -66,11 +42,14 @@ export default function Stories() {
           <SectionReveal delay={100}>
             <h2 className={styles.title}>{CONTENT.stories.title}</h2>
           </SectionReveal>
+          <SectionReveal delay={180}>
+            <p className={styles.introduction}>{CONTENT.stories.introduction}</p>
+          </SectionReveal>
         </div>
 
         <div className={styles.stories}>
-          {CONTENT.stories.items.map((item, i) => (
-            <StoryItem key={item.number} item={item} index={i} />
+          {CONTENT.stories.items.map((item) => (
+            <StoryItem key={item.number} item={item} />
           ))}
         </div>
 

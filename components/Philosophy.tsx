@@ -5,20 +5,20 @@ import styles from "./Philosophy.module.css";
 
 export default function Philosophy() {
   return (
-    <section id="atendimento" className={`section ${styles.section}`}>
+    <section id="fertilidade" className={`section ${styles.section}`}>
       <div className="container">
         <div className={styles.header}>
           <SectionReveal>
-            <p className="eyebrow">{CONTENT.philosophy.eyebrow}</p>
+            <p className="eyebrow">{CONTENT.fertility.eyebrow}</p>
           </SectionReveal>
           <SectionReveal delay={100}>
-            <h2 className={styles.title}>{CONTENT.philosophy.title}</h2>
+            <h2 className={styles.title}>{CONTENT.fertility.title}</h2>
           </SectionReveal>
         </div>
 
         <div className={styles.grid}>
           <div className={styles.list}>
-            {CONTENT.philosophy.items.map((item, i) => (
+            {CONTENT.fertility.items.map((item, i) => (
               <SectionReveal key={item.number} delay={i * 120}>
                 <div className={styles.item}>
                   <div className={styles.itemHeader}>
@@ -39,7 +39,7 @@ export default function Philosophy() {
           >
             <Image
               src="/images/keli-consultorio.jpg"
-              alt="Keli Zeferino sentada à mesa do consultório, em um ambiente profissional e acolhedor"
+              alt="Keli Zeferino sentada à mesa, em um ambiente profissional e acolhedor"
               width={1000}
               height={1500}
               sizes="(max-width: 1024px) 100vw, 45vw"

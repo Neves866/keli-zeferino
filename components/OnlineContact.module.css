@@ -29,22 +29,30 @@
 }
 
 .name {
+  font-family: var(--font-fraunces);
   font-size: clamp(1.8rem, 3vw, 2.3rem);
   margin-bottom: 0.35rem;
+  color: var(--ink-primary);
 }
 
 .role {
   font-size: 0.8rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-muted);
+}
+
+.location {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--accent-sage-dark);
+  font-weight: 500;
 }
 
 .infoList {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  margin-bottom: 2.5rem;
 }
 
 .infoItem {
@@ -81,12 +89,4 @@
 .infoLink:hover {
   color: var(--accent-sage);
   text-decoration-color: var(--accent-sage);
-}
-
-.reference {
-  font-size: 0.85rem;
-  color: var(--ink-muted);
-  border-top: 1px solid var(--line-soft);
-  padding-top: 2rem;
-  margin: 0;
 }

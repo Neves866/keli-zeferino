@@ -22,16 +22,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Keli Zeferino | Nutricionista em Cacoal - RO",
+  title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
   description:
-    "Acompanhamento nutricional individualizado, humano e cuidadoso para mulheres em Cacoal - RO. Escuta, respeito e acolhimento em cada etapa da sua jornada de saúde.",
+    "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
   keywords: [
-    "nutricionista",
-    "Cacoal",
-    "Rondônia",
-    "nutrição feminina",
-    "saúde da mulher",
-    "acompanhamento nutricional",
+    "nutricionista fertilidade",
+    "nutricionista de fertilidade",
+    "nutricionista fertilidade online",
+    "nutrição e fertilidade",
+    "nutrição para tentantes",
+    "preparação nutricional para gestação",
+    "fertilidade feminina",
+    "fertilidade do casal",
+    "acompanhamento nutricional online",
   ],
   authors: [{ name: "Keli Zeferino" }],
   creator: "Keli Zeferino",
@@ -40,9 +43,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Keli Zeferino | Nutricionista em Cacoal - RO",
+    title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
     description:
-      "Acompanhamento nutricional individualizado, humano e cuidadoso para mulheres em Cacoal - RO.",
+      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
     type: "website",
     locale: "pt_BR",
     siteName: "Keli Zeferino",
@@ -50,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Keli Zeferino | Nutricionista em Cacoal - RO",
+    title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
     description:
-      "Acompanhamento nutricional individualizado, humano e cuidadoso para mulheres em Cacoal - RO.",
+      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
   },
   icons: {
     icon: "/favicon.svg",

@@ -9,13 +9,11 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
           <p className={styles.name}>{CONTENT.brand.name}</p>
-          <p className={styles.tagline}>{CONTENT.footer.tagline}</p>
+          <p className={styles.role}>{CONTENT.brand.role}</p>
+          <p className={styles.location}>{CONTENT.footer.location}</p>
         </div>
 
         <div className={styles.meta}>
-          <p>
-            {CONTENT.contact.addressName} · {CONTENT.contact.addressCity}
-          </p>
           <a
             href={whatsappLink()}
             target="_blank"
@@ -24,6 +22,7 @@ export default function Footer() {
           >
             WhatsApp: {WHATSAPP_DISPLAY}
           </a>
+          <p className={styles.tagline}>{CONTENT.footer.tagline}</p>
         </div>
 
         <p className={styles.rights}>

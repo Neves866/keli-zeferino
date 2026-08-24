@@ -11,7 +11,7 @@ export default function AboutKeli() {
           <SectionReveal className={styles.imageWrap} variant="fade">
             <Image
               src="/images/keli-sobre.jpg"
-              alt="Keli Zeferino sorrindo, sentada em um sofá em ambiente acolhedor"
+              alt="Keli Zeferino, nutricionista especialista em fertilidade, sorrindo em um ambiente acolhedor"
               width={1000}
               height={1500}
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -28,9 +28,11 @@ export default function AboutKeli() {
               <h2 className={styles.title}>{CONTENT.about.title}</h2>
             </SectionReveal>
 
-            <SectionReveal delay={200}>
-              <p className={styles.text}>{CONTENT.about.text}</p>
-            </SectionReveal>
+            {CONTENT.about.paragraphs.map((paragraph, i) => (
+              <SectionReveal key={i} delay={150 + i * 40}>
+                <p className={styles.text}>{paragraph}</p>
+              </SectionReveal>
+            ))}
 
             <SectionReveal delay={280}>
               <div className={styles.signature}>
@@ -38,7 +40,7 @@ export default function AboutKeli() {
                   {CONTENT.brand.name}
                 </span>
                 <span className={styles.signatureRole}>
-                  {CONTENT.brand.role} · {CONTENT.brand.location}
+                  {CONTENT.brand.role}
                 </span>
               </div>
             </SectionReveal>
@@ -47,7 +49,11 @@ export default function AboutKeli() {
 
         {/* Divisor visual — fotografia da própria Keli em sua gestação.
             Contexto pessoal, nunca associada a resultados de pacientes. */}
-        <SectionReveal variant="fade" delay={100} className={styles.personalDivider}>
+        <SectionReveal
+          variant="fade"
+          delay={100}
+          className={styles.personalDivider}
+        >
           <figure className={styles.personalFigure}>
             <Image
               src="/images/keli-gestacao-divisor.jpg"
@@ -58,8 +64,7 @@ export default function AboutKeli() {
               className={styles.personalImage}
             />
             <figcaption className={styles.personalCaption}>
-              Um momento pessoal da Keli — a vivência que também a aproxima de
-              cada história que chega até ela.
+              {CONTENT.about.personalCaption}
             </figcaption>
           </figure>
         </SectionReveal>

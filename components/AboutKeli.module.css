@@ -39,6 +39,11 @@
   font-size: 1.02rem;
   line-height: 1.9;
   color: var(--ink-secondary);
+  margin-bottom: 1.1rem;
+}
+
+.text:last-of-type {
+  margin-bottom: 0;
 }
 
 .signature {

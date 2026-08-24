@@ -27,3 +27,9 @@
 .actions {
   margin-top: 0.8rem;
 }
+
+.note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}

@@ -10,7 +10,7 @@ export default function Hero() {
         <div className={styles.imageWrap}>
           <Image
             src="/images/keli-hero.jpg"
-            alt="Keli Zeferino, nutricionista, sorrindo em um ambiente acolhedor com elementos naturais"
+            alt="Keli Zeferino, nutricionista especialista em fertilidade, sorrindo em um ambiente acolhedor com elementos naturais"
             width={909}
             height={1363}
             priority
@@ -18,7 +18,7 @@ export default function Hero() {
             className={styles.heroImage}
           />
           <span className={styles.imageCaption} aria-hidden="true">
-            Keli Zeferino · Nutrição com cuidado
+            {CONTENT.hero.imageCaption}
           </span>
         </div>
 
@@ -32,6 +32,8 @@ export default function Hero() {
           </h1>
 
           <p className={styles.text}>{CONTENT.hero.text}</p>
+
+          <p className={styles.highlights}>{CONTENT.hero.highlights}</p>
 
           <div className={styles.actions}>
             <a

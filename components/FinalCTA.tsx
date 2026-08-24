@@ -27,6 +27,10 @@ export default function FinalCTA() {
             </a>
           </div>
         </SectionReveal>
+
+        <SectionReveal delay={280}>
+          <p className={styles.note}>{CONTENT.finalCta.note}</p>
+        </SectionReveal>
       </div>
     </section>
   );
