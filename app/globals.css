@@ -26,7 +26,7 @@
   --font-inter: "Inter", system-ui, -apple-system, sans-serif;
 
   /* Espaçamentos */
-  --section-pad: clamp(5rem, 10vw, 9rem);
+  --section-pad: clamp(3.5rem, 5vw, 5rem);
   --container: 1200px;
   --container-narrow: 880px;
 

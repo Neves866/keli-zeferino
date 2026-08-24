@@ -12,19 +12,19 @@
 
 .card {
   width: 100%;
-  max-width: 620px;
+  max-width: 580px;
   background: var(--bg-card);
   border: 1px solid var(--line-soft);
   border-radius: 4px;
-  padding: clamp(2.5rem, 5vw, 4rem);
+  padding: clamp(2rem, 4vw, 3rem);
   box-shadow:
     0 1px 0 rgba(226, 216, 199, 0.4),
     0 24px 48px -28px rgba(42, 37, 32, 0.12);
 }
 
 .brandBlock {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--line-soft);
 }
 

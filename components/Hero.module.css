@@ -174,13 +174,14 @@
 
 @media (min-width: 1024px) {
   .hero {
+    min-height: 90svh;
     padding-top: 6rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.5rem;
   }
 
   .inner {
     grid-template-columns: 55fr 45fr;
-    gap: clamp(3rem, 6vw, 6rem);
+    gap: clamp(3rem, 6vw, 5.5rem);
   }
 
   .imageWrap {

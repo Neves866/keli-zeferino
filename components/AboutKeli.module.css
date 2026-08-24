@@ -5,7 +5,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(3rem, 6vw, 5rem);
+  gap: clamp(2.5rem, 4vw, 3.5rem);
   align-items: center;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .title {
-  margin: 1.4rem 0 1.5rem;
+  margin: 1rem 0 1.2rem;
 }
 
 .text {
@@ -68,11 +68,11 @@
 }
 
 .personalDivider {
-  margin-top: clamp(4rem, 8vw, 6rem);
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 .personalFigure {
-  max-width: 900px;
+  max-width: 760px;
   margin-inline: auto;
 }
 
