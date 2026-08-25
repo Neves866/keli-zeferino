@@ -33,3 +33,41 @@
   font-size: 0.85rem;
   color: var(--ink-muted);
 }
+
+/* ============================================
+   Mobile
+   ============================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .inner {
+    gap: 1.05rem;
+  }
+
+  .title {
+    margin-bottom: 0.25rem;
+  }
+
+  .text {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .actions {
+    margin-top: 0.65rem;
+    width: 100%;
+  }
+
+  .actions a {
+    width: 100%;
+  }
+
+  .note {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+  }
+}

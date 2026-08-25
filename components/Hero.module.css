@@ -198,10 +198,75 @@
 }
 
 /* ============================================
-   Mobile pequeno
+   Mobile
    ============================================ */
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 0;
+    padding-top: 5.5rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .inner {
+    gap: 1.75rem;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .imageWrap {
+    order: 2;
+    max-width: 100%;
+    margin: 0;
+    aspect-ratio: 4 / 5;
+    box-shadow:
+      0 1px 0 rgba(226, 216, 199, 0.5),
+      0 12px 24px -16px rgba(42, 37, 32, 0.18);
+  }
+
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+  }
+
+  .imageCaption {
+    display: none;
+  }
+
+  .eyebrow {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    margin-bottom: 1.15rem;
+  }
+
+  .text {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .highlights {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .actions a {
+    width: 100%;
+  }
+
   .scrollHint {
     display: none;
   }
@@ -209,15 +274,12 @@
 
 @media (max-width: 360px) {
   .hero {
-    padding-top: 4.5rem;
+    padding-top: 5rem;
   }
 
-  .title {
-    font-size: clamp(2rem, 8vw, 2.4rem);
-  }
-
-  .text {
-    font-size: 0.98rem;
+  .imageWrap {
+    aspect-ratio: 4 / 5;
+    max-height: 420px;
   }
 }
 

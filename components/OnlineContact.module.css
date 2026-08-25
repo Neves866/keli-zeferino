@@ -90,3 +90,39 @@
   color: var(--accent-sage);
   text-decoration-color: var(--accent-sage);
 }
+
+/* ============================================
+   Mobile
+   ============================================ */
+
+@media (max-width: 768px) {
+  .inner {
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1.45rem 1.4rem;
+    box-shadow:
+      0 1px 0 rgba(226, 216, 199, 0.4),
+      0 10px 22px -16px rgba(42, 37, 32, 0.1);
+  }
+
+  .brandBlock {
+    margin-bottom: 1.15rem;
+    padding-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .location {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .infoList {
+    gap: 1.15rem;
+  }
+}

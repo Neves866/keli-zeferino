@@ -149,6 +149,36 @@ p {
 }
 
 /* ============================================
+   Mobile — override de espaçamento e tipografia
+   ============================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 3rem;
+  }
+
+  h1 {
+    font-size: clamp(2.05rem, 7vw, 2.25rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 5.6vw, 2rem);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 4.2vw, 1.45rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .section {
+    padding-block: 2.85rem;
+  }
+}
+
+/* ============================================
    Eyebrow
    ============================================ */
 
@@ -220,6 +250,18 @@ p {
 .btn:focus-visible {
   outline: 2px solid var(--accent-sage-dark);
   outline-offset: 3px;
+}
+
+/* ============================================
+   Mobile — touch targets confortáveis
+   ============================================ */
+
+@media (max-width: 768px) {
+  .btn {
+    min-height: 3rem;
+    padding: 0.95rem 1.6rem;
+    font-size: 0.96rem;
+  }
 }
 
 /* ============================================

@@ -4,11 +4,18 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CONTENT } from "@/lib/content";
 import SectionReveal from "./SectionReveal";
+import TestimonialLightbox from "./TestimonialLightbox";
 import styles from "./Testimonials.module.css";
 
 export default function Testimonials() {
   const items = CONTENT.testimonials.items;
   const [current, setCurrent] = useState(0);
+  const [lightbox, setLightbox] = useState<{
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  } | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
 
   const scrollTo = useCallback(
@@ -49,6 +56,16 @@ export default function Testimonials() {
       e.preventDefault();
       scrollTo(current + 1);
     }
+  };
+
+  const openLightbox = (i: number) => {
+    const item = items[i];
+    setLightbox({
+      src: item.src,
+      alt: item.alt,
+      width: item.width,
+      height: item.height,
+    });
   };
 
   return (
@@ -105,15 +122,22 @@ export default function Testimonials() {
                     className={styles.slide}
                     aria-hidden={i !== current}
                   >
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      width={800}
-                      height={1100}
-                      sizes="(max-width: 768px) 92vw, (max-width: 1024px) 70vw, 640px"
-                      className={styles.image}
-                      loading={i === 0 ? "eager" : "lazy"}
-                    />
+                    <button
+                      type="button"
+                      className={styles.imageButton}
+                      onClick={() => openLightbox(i)}
+                      aria-label={`Ampliar depoimento ${i + 1}`}
+                    >
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        width={item.width}
+                        height={item.height}
+                        sizes="(max-width: 768px) 92vw, (max-width: 1024px) 70vw, 640px"
+                        className={styles.image}
+                        loading={i === 0 ? "eager" : "lazy"}
+                      />
+                    </button>
                   </figure>
                 ))}
               </div>
@@ -143,18 +167,30 @@ export default function Testimonials() {
         </SectionReveal>
 
         <SectionReveal delay={160}>
-          <div className={styles.dots} role="tablist" aria-label="Escolher depoimento">
-            {items.map((item, i) => (
-              <button
-                key={item.src}
-                type="button"
-                className={`${styles.dot} ${i === current ? styles.dotActive : ""}`}
-                aria-label={`Ir para o depoimento ${i + 1}`}
-                aria-selected={i === current}
-                role="tab"
-                onClick={() => scrollTo(i)}
-              />
-            ))}
+          <div className={styles.controls}>
+            <p className={styles.swipeHint} aria-hidden="true">
+              Deslize para ver mais
+            </p>
+            <p className={styles.counter} aria-live="polite">
+              {current + 1} / {items.length}
+            </p>
+            <div
+              className={styles.dots}
+              role="tablist"
+              aria-label="Escolher depoimento"
+            >
+              {items.map((item, i) => (
+                <button
+                  key={item.src}
+                  type="button"
+                  className={`${styles.dot} ${i === current ? styles.dotActive : ""}`}
+                  aria-label={`Ir para o depoimento ${i + 1}`}
+                  aria-selected={i === current}
+                  role="tab"
+                  onClick={() => scrollTo(i)}
+                />
+              ))}
+            </div>
           </div>
         </SectionReveal>
 
@@ -162,6 +198,16 @@ export default function Testimonials() {
           <p className={styles.disclaimer}>{CONTENT.testimonials.disclaimer}</p>
         </SectionReveal>
       </div>
+
+      {lightbox ? (
+        <TestimonialLightbox
+          src={lightbox.src}
+          alt={lightbox.alt}
+          width={lightbox.width}
+          height={lightbox.height}
+          onClose={() => setLightbox(null)}
+        />
+      ) : null}
     </section>
   );
 }

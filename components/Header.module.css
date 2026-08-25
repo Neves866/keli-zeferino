@@ -100,6 +100,8 @@
   justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 999px;
   border: 1px solid var(--line-soft);
   background: rgba(255, 255, 255, 0.6);
@@ -221,8 +223,22 @@
 }
 
 /* ============================================
-   Mobile pequeno
+   Mobile
    ============================================ */
+
+@media (max-width: 768px) {
+  .inner {
+    height: 4.5rem;
+  }
+
+  .brandRole {
+    display: none;
+  }
+
+  .mobileMenu {
+    top: 4.5rem;
+  }
+}
 
 @media (max-width: 360px) {
   .brandName {
