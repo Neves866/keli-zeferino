@@ -110,16 +110,16 @@ export const CONTENT = {
       "Relatos individuais. Resultados podem variar de pessoa para pessoa.",
     items: [
       {
-        src: "/images/depoimentos/depoimento-01.jpg",
-        alt: "Depoimento de paciente sobre sua jornada de fertilidade",
-        width: 971,
-        height: 821,
-      },
-      {
         src: "/images/depoimentos/depoimento-02.jpg",
         alt: "Mensagem de paciente agradecendo pelo acompanhamento nutricional",
         width: 674,
         height: 1600,
+      },
+      {
+        src: "/images/depoimentos/depoimento-01.jpg",
+        alt: "Depoimento de paciente sobre sua jornada de fertilidade",
+        width: 971,
+        height: 821,
       },
       {
         src: "/images/depoimentos/depoimento-03.jpg",
