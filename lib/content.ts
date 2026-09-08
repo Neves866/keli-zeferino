@@ -19,7 +19,7 @@ export const CONTENT = {
     titleHighlight: "sonha em construir uma família",
     titleSuffix: ".",
     text: "Acompanhamento nutricional individualizado para mulheres e casais que desejam se preparar para a gestação, com alimentação, suplementação quando indicada e mudanças no estilo de vida orientadas por evidências.",
-    cta: "Quero iniciar meu acompanhamento",
+    cta: "Agende sua consulta",
     scrollHint: "Role para conhecer",
     highlights: "Atendimento 100% online · Todo o Brasil",
     imageCaption: "Keli Zeferino · Nutrição para fertilidade",
