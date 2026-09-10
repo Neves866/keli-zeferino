@@ -68,18 +68,34 @@ export const CONTENT = {
     items: [
       {
         number: "01",
-        title: "Uma jornada marcada pela esperança",
-        text: "Uma paciente com endometriose e obstrução das duas trompas relatada em exame de histerossalpingografia iniciou seu acompanhamento nutricional durante a jornada para engravidar. Mais tarde, compartilhou a notícia da gestação e hoje vive um novo capítulo dessa história ao lado da filha.",
+        title: "Quando a esperança continuou presente",
+        text: "Depois de ouvir de três médicos que uma gestação só seria possível por meio de FIV, essa paciente seguiu sua jornada de cuidados e também realizou acompanhamento nutricional com a Keli. Mais tarde, compartilhou a notícia da gestação e, hoje, vive um novo capítulo ao lado da filha. Em sua mensagem, contou que o processo foi difícil, mas que encontrou apoio para seguir em frente com mais confiança.",
+        image: "/images/historia-esperanca.jpg",
+        imageAlt:
+          "Pais sorrindo ao lado da filha recém-nascida, na maternidade",
+        imageWidth: 1200,
+        imageHeight: 1600,
       },
       {
         number: "02",
-        title: "Quando a baixa reserva ovariana fazia parte do caminho",
-        text: "Uma paciente de 39 anos, com endometriose, doença autoimune e baixa reserva ovariana, realizou acompanhamento nutricional individualizado durante sua preparação. Posteriormente, compartilhou seu positivo e a chegada do filho.",
+        title: "Um cuidado individualizado em meio à baixa reserva ovariana",
+        text: "Aos 39 anos, convivendo com endometriose, doença autoimune e baixa reserva ovariana, essa paciente buscou um acompanhamento nutricional individualizado durante sua preparação para engravidar. Ao longo da jornada, manteve seus demais cuidados de saúde e, posteriormente, compartilhou a alegria do positivo e da chegada do filho.",
+        image: "/images/depoimentos/depoimento-02.jpg",
+        imageAlt:
+          "Mensagem da paciente compartilhando a chegada do filho, com a foto do bebê",
+        imageWidth: 674,
+        imageHeight: 1600,
+        imageFit: "contain",
       },
       {
         number: "03",
-        title: "Depois de anos de tentativas",
-        text: "Após dois anos tentando engravidar, convivendo com endometriose e SOP e tendo passado por uma FIV sem sucesso, uma paciente seguiu sua jornada com acompanhamento nutricional e posteriormente compartilhou a notícia de uma gestação natural.",
+        title: "Depois de dois anos de tentativas",
+        text: "Após dois anos tentando engravidar, convivendo com endometriose e SOP e tendo passado por uma FIV sem sucesso, essa paciente realizou acompanhamento nutricional durante a continuidade de sua jornada. Mais tarde, compartilhou com a Keli a notícia de uma gestação natural e, depois, a chegada do bebê. Um novo capítulo depois de um caminho marcado por tentativas, expectativas e persistência.",
+        image: "/images/depoimentos/depoimento-04.jpg",
+        imageAlt:
+          "Mensagem da paciente compartilhando a gestação natural após dois anos de tentativas, ao lado de uma foto do bebê",
+        imageWidth: 1010,
+        imageHeight: 777,
       },
     ],
   },

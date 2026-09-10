@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CONTENT } from "@/lib/content";
 import SectionReveal from "./SectionReveal";
 import styles from "./Stories.module.css";
@@ -6,11 +7,37 @@ interface StoryItem {
   number: string;
   title: string;
   text: string;
+  image: string;
+  imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
+  imageFit?: "contain";
 }
 
 function StoryItem({ item }: { item: StoryItem }) {
+  // Prints de conversa (proporção muito vertical) são exibidos por
+  // completo, sem corte, dentro de um frame discreto.
+  const contained = item.imageFit === "contain";
+
   return (
     <article className={styles.story}>
+      <SectionReveal delay={60}>
+        <div
+          className={`${styles.storyImageWrap} ${
+            contained ? styles.storyImageFrame : ""
+          }`}
+        >
+          <Image
+            src={item.image}
+            alt={item.imageAlt}
+            width={item.imageWidth}
+            height={item.imageHeight}
+            sizes="(max-width: 768px) 92vw, (max-width: 1024px) 46vw, 30vw"
+            className={contained ? styles.storyImageContain : styles.storyImage}
+          />
+        </div>
+      </SectionReveal>
+
       <div className={styles.storyContent}>
         <SectionReveal delay={120}>
           <div className="editorial-line">
