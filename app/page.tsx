@@ -42,10 +42,7 @@ const jsonLd = {
       provider: {
         "@id": "https://kelizeferino.com.br/#person",
       },
-      areaServed: {
-        "@type": "Country",
-        name: "Brasil",
-      },
+      areaServed: "Worldwide",
     },
   ],
 };

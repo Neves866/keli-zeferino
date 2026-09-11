@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
   description:
-    "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
+    "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais no Brasil e no exterior, com estratégias individualizadas e baseadas em evidências.",
   keywords: [
     "nutricionista fertilidade",
     "nutricionista de fertilidade",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
     description:
-      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
+      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais no Brasil e no exterior, com estratégias individualizadas e baseadas em evidências.",
     type: "website",
     locale: "pt_BR",
     siteName: "Keli Zeferino",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Keli Zeferino | Nutricionista Especialista em Fertilidade",
     description:
-      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais em todo o Brasil, com estratégias individualizadas e baseadas em evidências.",
+      "Acompanhamento nutricional online para fertilidade, voltado a mulheres e casais no Brasil e no exterior, com estratégias individualizadas e baseadas em evidências.",
   },
   icons: {
     icon: "/favicon.svg",

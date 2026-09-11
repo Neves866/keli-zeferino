@@ -2,7 +2,7 @@ export const CONTENT = {
   brand: {
     name: "Keli Zeferino",
     role: "Nutricionista especialista em fertilidade",
-    location: "Atendimento online · Todo o Brasil",
+    location: "Atendimento online · Brasil e exterior",
   },
 
   nav: [
@@ -21,7 +21,7 @@ export const CONTENT = {
     text: "Acompanhamento nutricional individualizado para mulheres e casais que desejam se preparar para a gestação, com alimentação, suplementação quando indicada e mudanças no estilo de vida orientadas por evidências.",
     cta: "Agende sua consulta",
     scrollHint: "Role para conhecer",
-    highlights: "Atendimento 100% online · Todo o Brasil",
+    highlights: "Atendimento 100% online · Brasil e exterior",
     imageCaption: "Keli Zeferino · Nutrição para fertilidade",
   },
 
@@ -155,7 +155,7 @@ export const CONTENT = {
   onlineCare: {
     eyebrow: "Atendimento online",
     title: "Acompanhamento nutricional onde você estiver.",
-    text: "A Keli atende mulheres e casais de todo o Brasil por meio de consultas online, permitindo um acompanhamento individualizado independentemente da cidade onde você mora.",
+    text: "A Keli atende mulheres e casais no Brasil e no exterior por meio de consultas online, permitindo um acompanhamento individualizado independentemente de onde você esteja.",
     steps: [
       {
         number: "01",
@@ -184,19 +184,19 @@ export const CONTENT = {
     title: "Seu sonho merece um cuidado individualizado.",
     text: "Se você está se preparando para engravidar e busca um acompanhamento nutricional especializado em fertilidade, converse com a Keli.",
     cta: "Quero conversar com a Keli",
-    note: "Atendimento 100% online para todo o Brasil",
+    note: "Atendimento 100% online · Brasil e exterior",
   },
 
   contact: {
     label: "Contato",
-    location: "Atendimento online · Todo o Brasil",
+    location: "Atendimento online · Brasil e exterior",
   },
 
   footer: {
     tagline:
       "Nutrição e fertilidade com cuidado individualizado e baseado em evidências.",
     rights: "Todos os direitos reservados.",
-    location: "Atendimento online · Todo o Brasil",
+    location: "Atendimento online · Brasil e exterior",
   },
 } as const;
 
